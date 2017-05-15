@@ -1,6 +1,6 @@
 # Banking Ledger - Web Version
 
-#### _Asp.Net Application, 5/14/2017_
+#### _Asp.Net MVC Application, 5/14/2017_
 
 #### By _**Erik Killops**_
 
@@ -35,7 +35,7 @@ _Requires .Net Framework and Visual Studio_
 
 ## Technologies Used
 
-C#, .NetCore
+C#, .NetCore, Asp.Net MVC
 
 ### License
 
