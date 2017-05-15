@@ -14,12 +14,6 @@ namespace BankingLedgerWeb.Controllers
             return View(currentUser);
         }
 
-        public IActionResult TransactionHistory()
-        {
-            List<Transaction> transactions = currentUser.BankAccount.GetTransactionHistory();
-            return View();
-        }
-
         public IActionResult Deposit()
         {
             return View();
