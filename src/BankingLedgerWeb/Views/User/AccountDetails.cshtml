@@ -1,0 +1,55 @@
+﻿@{
+}
+
+@model BankingLedgerWeb.Models.User
+
+<h1>Account Details</h1>
+<hr />
+<br />
+@if (ViewBag.StatusMessage != null)
+{
+    <p>
+        @if (ViewBag.OperationSuccessful == true)
+        {
+            <span class="text-green">@ViewBag.StatusMessage</span>
+        }
+        else if (ViewBag.OperationSuccessful == false)
+        {
+            <span class="text-red">@ViewBag.StatusMessage</span>
+        }
+    </p>
+}
+
+<p><strong>Balance:</strong> @Model.BankAccount.GetBalance()</p>
+
+<br />
+
+<p><a class="btn btn-default" asp-controller="User" asp-action="Deposit">Deposit</a>&nbsp;<a class="btn btn-default" asp-controller="User" asp-action="Withdraw">Withdraw</a></p>
+
+<br />
+
+<h2>Transaction History</h2>
+
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <th>Transaction</th>
+    </tr>
+    @foreach (var transaction in @Model.BankAccount.GetTransactionHistory())
+    {
+        <tr>
+            <td>@transaction.Date.ToString("d") - @transaction.Date.ToString("t")</td>
+            @if (transaction.Type == "deposit")
+            {
+                <td><span class="text-green">+ @transaction.Amount</span></td>
+            }
+            else if (transaction.Type == "withdrawal")
+            {
+                <td><span class="text-red">- @transaction.Amount</span></td>
+            }
+        </tr>
+    }
+</table>
+
+
+

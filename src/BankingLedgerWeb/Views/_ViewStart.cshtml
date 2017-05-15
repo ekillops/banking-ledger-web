@@ -1,0 +1,11 @@
+﻿@using BankingLedgerWeb.Models
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "CashSource";
+    ViewBag.IsLoggedIn = UserHelper.IsLoggedIn;
+
+    if (UserHelper.IsLoggedIn)
+    {
+        ViewBag.CurrenUserName = UserHelper.CurrentUser.Name;
+    }
+}
