@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace BankingLedgerWeb.Models
 {
@@ -43,6 +41,7 @@ namespace BankingLedgerWeb.Models
                 return false;
             }
         }
+
         public decimal GetBalance()
         {
             return Balance;

@@ -1,13 +1,13 @@
-﻿@{
-}
-@model BankingLedgerWeb.ViewModels.LoginViewModel
+﻿@model BankingLedgerWeb.ViewModels.LoginViewModel
 
 <h1>Login</h1>
 <hr />
+
 @if (ViewBag.ErrorMessage != null)
 {
     <p class="text-red">@ViewBag.ErrorMessage</p>
 }
+
 <form asp-controller="Account" asp-action="Login" method="post">
     <div class="form-group">
         <label asp-for="Name"></label>

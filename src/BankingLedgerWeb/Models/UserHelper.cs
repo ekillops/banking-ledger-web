@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace BankingLedgerWeb.Models
 {
@@ -16,6 +14,7 @@ namespace BankingLedgerWeb.Models
         {
             return AllUsers;
         }
+
         public static void AddNew(User newUser)
         {
             newUser.Id = IdCounter;

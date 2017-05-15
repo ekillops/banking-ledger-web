@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace BankingLedgerWeb.Models
+﻿namespace BankingLedgerWeb.Models
 {
     public class User
     {
