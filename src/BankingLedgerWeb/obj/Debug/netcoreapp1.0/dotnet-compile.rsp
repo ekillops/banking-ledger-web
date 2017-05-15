@@ -1,5 +1,5 @@
---temp-output:c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\obj\Debug\netcoreapp1.0\
---out:c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\bin\Debug\netcoreapp1.0\BankingLedgerWeb.dll
+--temp-output:C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\obj\Debug\netcoreapp1.0\
+--out:C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\bin\Debug\netcoreapp1.0\BankingLedgerWeb.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -167,14 +167,14 @@
 --reference:C:\Users\M1530\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\M1530\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\M1530\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\obj\Debug\netcoreapp1.0\BankingLedgerWebdotnet-compile.deps.json",BankingLedgerWeb.deps.json
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Program.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Startup.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Controllers\AccountController.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Controllers\HomeController.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Controllers\UserController.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\BankAccount.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\Transaction.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\User.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\UserHelper.cs
-c:\users\m1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\ViewModels\LoginViewModel.cs
+--resource:"C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\obj\Debug\netcoreapp1.0\BankingLedgerWebdotnet-compile.deps.json",BankingLedgerWeb.deps.json
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Program.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Startup.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Controllers\AccountController.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Controllers\HomeController.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Controllers\UserController.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\BankAccount.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\Transaction.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\User.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\Models\UserHelper.cs
+C:\Users\M1530\documents\visual studio 2015\Projects\BankingLedgerWeb\src\BankingLedgerWeb\ViewModels\LoginViewModel.cs

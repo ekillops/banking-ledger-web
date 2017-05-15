@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using BankingLedgerWeb.Models;
 
@@ -14,22 +13,16 @@ namespace BankingLedgerWeb.Controllers
             return View(currentUser);
         }
 
-        public IActionResult TransactionHistory()
-        {
-            List<Transaction> transactions = currentUser.BankAccount.GetTransactionHistory();
-            return View();
-        }
-
         public IActionResult Deposit()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Deposit(float inputAmount)
+        public IActionResult Deposit(float inputAmount, string inputDescription)
         {
             decimal depositAmount = Convert.ToDecimal(inputAmount);
-            bool depositSuccessful = currentUser.BankAccount.Deposit(depositAmount);
+            bool depositSuccessful = currentUser.BankAccount.Deposit(depositAmount, inputDescription);
 
             if (depositSuccessful)
             {
@@ -51,10 +44,10 @@ namespace BankingLedgerWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult Withdraw(float inputAmount)
+        public IActionResult Withdraw(float inputAmount, string inputDescription)
         {
             decimal withdrawAmount = Convert.ToDecimal(inputAmount);
-            bool withdrawalSuccessful = currentUser.BankAccount.Withdraw(withdrawAmount);
+            bool withdrawalSuccessful = currentUser.BankAccount.Withdraw(withdrawAmount, inputDescription);
 
             if (withdrawalSuccessful)
             {

@@ -27,12 +27,14 @@
 <table class="table">
     <tr>
         <th>Date</th>
+        <th>Description</th>
         <th>Transaction</th>
     </tr>
     @foreach (var transaction in @Model.BankAccount.GetTransactionHistory())
     {
         <tr>
             <td>@transaction.Date.ToString("d") - @transaction.Date.ToString("t")</td>
+            <td>@transaction.Description</td>
             @if (transaction.Type == "deposit")
             {
                 <td><span class="text-green">+ @transaction.Amount</span></td>

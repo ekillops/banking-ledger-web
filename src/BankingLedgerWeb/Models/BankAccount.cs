@@ -14,12 +14,12 @@ namespace BankingLedgerWeb.Models
             Transactions = new List<Transaction>();
         }
 
-        public bool Deposit(decimal amount)
+        public bool Deposit(decimal amount, string description = "")
         {
             if (amount > 0)
             {
                 Balance += amount;
-                Transactions.Add(new Transaction(amount, "deposit"));
+                Transactions.Add(new Transaction(amount, "deposit", description));
                 return true;
             }
             else
@@ -28,12 +28,12 @@ namespace BankingLedgerWeb.Models
             }
         }
 
-        public bool Withdraw(decimal amount)
+        public bool Withdraw(decimal amount, string description = "")
         {
             if (amount > 0 && amount <= Balance)
             {
                 Balance -= amount;
-                Transactions.Add(new Transaction(amount, "withdrawal"));
+                Transactions.Add(new Transaction(amount, "withdrawal", description));
                 return true;
             }
             else
